@@ -1,0 +1,21 @@
+{
+  "name": "moneta-pay",
+  "version": "1.0.0",
+  "description": "Gasless recurring billing protocol on Monad Parallel EVM",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:monad": "npx hardhat run scripts/deploy.ts --network monadTestnet",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "ethers": "^6.11.0",
+    "node-cron": "^3.0.3"
+  }
+}
