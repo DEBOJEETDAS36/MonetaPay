@@ -2,6 +2,8 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import * as dotenv from "dotenv";
 
+declare const process: { env: Record<string, string | undefined> };
+
 dotenv.config();
 
 const config: HardhatUserConfig = {
