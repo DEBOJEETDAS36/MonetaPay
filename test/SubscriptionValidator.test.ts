@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
+import { describe, it } from "mocha";
 
 describe("StreamlinedSubscriptionValidator", function () {
   it("Should enforce billing intervals and prevent early double charges", async function () {
@@ -12,7 +13,7 @@ describe("StreamlinedSubscriptionValidator", function () {
     const amount = ethers.parseUnits("10", 6);
     const interval = 30 * 24 * 60 * 60; // 30 days
 
-    await validator.connect(user).setSubscription(
+    await (validator.connect(user) as any).setSubscription(
       merchant.address,
       ethers.ZeroAddress,
       amount,
