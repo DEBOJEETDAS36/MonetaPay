@@ -20,7 +20,7 @@ Moneta Pay engineers its storage routing (`account -> merchant -> Subscription`)
 ---
 
 ## 🛠️ Tech Stack & Architecture
-- **Smart Contracts:** Solidity `0.8.23`, Hardhat, ERC-7579 Modular Validation, ERC-4337 Account Abstraction.
+- **Smart Contracts:** Solidity `0.8.23`, Hardhat, ERC-7579 Modular Validation & ERC-4337 Account Abstraction.
 - **Frontend:** Next.js 14, Tailwind CSS, Framer Motion, Lucide Icons.
 - **Automation:** Node.js cron workers & Gelato Web3 Functions.
 
